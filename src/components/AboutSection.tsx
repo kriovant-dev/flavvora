@@ -82,7 +82,7 @@ export const AboutSection = () => {
                 Crafted with Love, <br />Served with Pride
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Founded in 1998 by the Sharma family, Flavvora began as a humble bakery 
+                Founded in 1998, Flavvora began as a humble bakery 
                 in the heart of the city. Our grandmother's secret recipes, passed down 
                 through generations, form the soul of every creation we make.
               </p>

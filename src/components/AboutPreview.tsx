@@ -52,7 +52,7 @@ export const AboutPreview = () => {
                   A Legacy of Sweet Traditions
                 </h2>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Founded in 1998 by the Sharma family, Flavvora began as a humble bakery 
+                  Founded in 1998, Flavvora began as a humble bakery 
                   in the heart of the city. Today, we blend traditional Indian flavors with 
                   modern baking techniques to create unique treats.
                 </p>
