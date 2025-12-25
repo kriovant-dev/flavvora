@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
@@ -12,7 +13,7 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-saffron to-gold flex items-center justify-center">
               <span className="font-display text-lg text-primary-foreground font-bold">F</span>
             </div>
@@ -24,19 +25,19 @@ export const Header = () => {
                 Savor the Flavor
               </p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#menu" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Menu
-            </a>
-            <a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              About
-            </a>
-            <a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Contact
-            </a>
+            <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Home
+            </Link>
+            <Link to="/orders" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Orders
+            </Link>
+            <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Our Story
+            </Link>
           </nav>
 
           {/* Cart Button */}
@@ -72,27 +73,27 @@ export const Header = () => {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border/50 animate-fade-in">
             <div className="flex flex-col gap-4">
-              <a
-                href="#menu"
+              <Link
+                to="/"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Menu
-              </a>
-              <a
-                href="#about"
+                Home
+              </Link>
+              <Link
+                to="/orders"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                About
-              </a>
-              <a
-                href="#contact"
+                Orders
+              </Link>
+              <Link
+                to="/about"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Contact
-              </a>
+                Our Story
+              </Link>
             </div>
           </nav>
         )}

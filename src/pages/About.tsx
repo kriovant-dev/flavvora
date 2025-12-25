@@ -1,18 +1,16 @@
 import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { MenuSection } from "@/components/MenuSection";
-import { CartDrawer } from "@/components/CartDrawer";
+import { AboutSection } from "@/components/AboutSection";
 import { Footer } from "@/components/Footer";
+import { CartDrawer } from "@/components/CartDrawer";
 import { CartProvider } from "@/context/CartContext";
 
-const Index = () => {
+const About = () => {
   return (
     <CartProvider>
       <div className="min-h-screen bg-background">
         <Header />
-        <main>
-          <Hero />
-          <MenuSection />
+        <main className="pt-20">
+          <AboutSection />
         </main>
         <Footer />
         <CartDrawer />
@@ -21,4 +19,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default About;

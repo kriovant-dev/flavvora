@@ -31,30 +31,46 @@ export const AboutSection = () => {
             {/* Image Grid */}
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center overflow-hidden shadow-lg">
-                  <div className="text-center p-6">
-                    <span className="font-display text-6xl text-primary">🍰</span>
-                    <p className="text-sm text-muted-foreground mt-2 font-medium">Artisan Cakes</p>
+                <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg relative group">
+                  <img 
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=750&fit=crop" 
+                    alt="Artisan Cakes" 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-sm text-white font-semibold">Artisan Cakes</p>
                   </div>
                 </div>
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-terracotta/20 to-terracotta/5 flex items-center justify-center overflow-hidden shadow-lg">
-                  <div className="text-center p-6">
-                    <span className="font-display text-5xl">🥧</span>
-                    <p className="text-sm text-muted-foreground mt-2 font-medium">Fresh Pastries</p>
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg relative group">
+                  <img 
+                    src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=600&fit=crop" 
+                    alt="Fresh Pastries" 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-sm text-white font-semibold">Fresh Pastries</p>
                   </div>
                 </div>
               </div>
               <div className="space-y-4 pt-8">
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center overflow-hidden shadow-lg">
-                  <div className="text-center p-6">
-                    <span className="font-display text-5xl">🍪</span>
-                    <p className="text-sm text-muted-foreground mt-2 font-medium">Classic Sweets</p>
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg relative group">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=600&fit=crop" 
+                    alt="Classic Sweets" 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-sm text-white font-semibold">Classic Sweets</p>
                   </div>
                 </div>
-                <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-saffron/20 to-saffron/5 flex items-center justify-center overflow-hidden shadow-lg">
-                  <div className="text-center p-6">
-                    <span className="font-display text-6xl">☕</span>
-                    <p className="text-sm text-muted-foreground mt-2 font-medium">Premium Coffee</p>
+                <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg relative group">
+                  <img 
+                    src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&h=750&fit=crop" 
+                    alt="Premium Coffee" 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-sm text-white font-semibold">Premium Coffee</p>
                   </div>
                 </div>
               </div>
