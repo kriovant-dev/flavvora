@@ -21,7 +21,7 @@ export const CartDrawer = () => {
     <>
       {/* Overlay */}
       <div
-        className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 animate-fade-in"
+        className="fixed inset-0 bg-foreground/20 backdrop-blur-sm z-50 animate-fade-in"
         onClick={() => setCartOpen(false)}
       />
 
