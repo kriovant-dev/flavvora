@@ -16,7 +16,7 @@ const MenuItemCard = ({ item }: { item: MenuItem }) => {
     : item.price;
 
   return (
-    <div className="group bg-card border border-border/50 rounded-lg p-4 hover:border-primary/30 hover:bg-secondary/30 transition-all duration-300 menu-item-hover">
+    <div className="group bg-card border border-border rounded-xl p-4 hover:border-primary/30 hover:shadow-lg transition-all duration-300 menu-item-hover">
       <div className="flex items-start justify-between gap-4">
         <div className="flex-1 min-w-0">
           <h4 className="font-medium text-foreground group-hover:text-primary transition-colors truncate">
